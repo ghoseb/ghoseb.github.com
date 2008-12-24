@@ -1150,7 +1150,7 @@
       var avgLong = (data[0][1] + data[l][1]) / 2;
       
 	  map.setMapType(YAHOO_MAP_REG);
-	  map.drawZoomAndCenter(new YGeoPoint(avgLat, avgLong), 4);
+	  map.drawZoomAndCenter(new YGeoPoint(avgLat, avgLong), 2);
 
       var startMarker = new YMarker(new YGeoPoint(data[0][0], data[0][1]));
       var endMarker = new YMarker(new YGeoPoint(data[l][0], data[l][1]));
