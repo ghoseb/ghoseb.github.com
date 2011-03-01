@@ -96,7 +96,7 @@ input, select {
 
 body {
 	background: #EDEDED url(images/ededed.jpg) repeat 0 0;
-	font: normal normal 17px/1.35 Lato, arial, serif;
+	font: normal normal 17px/145% Lato, arial, serif;
 	color: #464646;	
 	text-align: center;
 }
