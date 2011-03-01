@@ -1,0 +1,173 @@
+/* reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+body {
+	line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+	text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+	background-color:#ff9;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+	display:block;
+	height:1px;
+	border:0;   
+	border-top:1px solid #DCDCDC;
+	margin:1em 0;
+	padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+/* end reset */
+
+body {
+	background: #EDEDED url(images/ededed.jpg) repeat 0 0;
+	font: normal normal 17px/1.35 Lato, arial, serif;
+	color: #464646;	
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+	margin-bottom: 3px;
+}
+#header {
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 2.2em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+h3 {
+	font-size: 1.5em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+#container {
+	margin: 0 auto;
+	text-align: left;
+	width: 800px;
+}
+#content {
+	background: #FFF;
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.10), 0 0 30px rgba(0, 0, 0, 0.05) inset;
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.10), 0 0 30px rgba(0, 0, 0, 0.05) inset;
+	border: 1px solid #D5D5D5;		
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 10px;
+}
+
+#pic {
+	display: inline;
+	float: left;
+	height: 400px;
+	margin-right: 10px;
+	width: 267px;
+}
+
+#info {
+   /*margin-left: 300px;   */
+	overflow: hidden;
+}
+
+footer {
+	clear: both;
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+a {
+   background: transparent;
+   text-decoration: none;
+   border-bottom: 1px dotted;
+}
+
+a:hover {
+   border-bottom: 1px solid;
+}
+
+a:link {
+   color: #1b67c9;
+}
+
+a:visited {
+   color: #1b67c9;
+}
