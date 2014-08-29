@@ -1,0 +1,699 @@
+@charset "UTF-8";
+
+@import "fonts";
+@import "compass";
+@import "foundation/custom";
+@import "variables";
+@import "typeplate/typeplate";
+@import "utils";
+@import "icons";
+
+
+html, body {
+    @include respond-to(mobile) {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+
+    }
+}
+
+// Lists
+ul {
+    &.vertical-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Links
+a {
+    text-decoration: none;
+}
+a, a:visited{ color: rgba($color-primary, 0.75); }
+a:hover { color: $color-primary; }
+
+.content {
+    @include respond-to(tablets) {
+        font-size: 16px;
+        h1 {
+            font-size: 29px;
+        }
+    }
+    @include respond-to(mobile) {
+        font-size: 16px;
+        -webkit-hyphens: none;
+        h1 {
+            font-size: 26px;
+        }
+    }
+}
+.content .row > .columns > h1 {
+    margin-top: $gutter-mid;
+    @include respond-to(mobile) {
+        margin-top: $gutter-small;
+    }
+}
+
+.columns.large-12, .content .columns.large-8 {
+    @include respond-to(mobile) {
+        padding: 0 $gutter-tiny;
+    }
+}
+
+.content > div:not(.footer) > .row {
+    padding-bottom: $column-gutter;
+    @include respond-to(mobile) {
+        padding-bottom: $gutter-small;
+    }
+}
+
+table .crossed {
+    opacity: 0.25;
+}
+thead {
+    text-transform: uppercase;
+}
+
+// ----
+
+h1,h2,h3,h4,h5 {
+    text-transform: uppercase;
+    color: $color-secondary;
+}
+
+b, strong {
+    color: darken($color-copy, 8%);
+}
+
+.dark {
+    background: $color-primary;
+    h1,h2,h3,h4,h5 {
+        color: $color-white;
+    }
+    a {
+        color: rgba($color-white, 0.5);
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+.header {
+    //    background: $color-primary;
+    min-height: $header-height;
+    @include respond-to(tablets) {
+        min-height: 300px;
+    }
+}
+.topnav {
+    margin-top: $gutter-tiny;
+    float: right;
+    text-transform: uppercase;
+    a {
+        color: rgba($color-white, 0.5);
+        font-size: 14px;
+        @include respond-to(tablets) {
+            font-size: 12px;
+        }
+    }
+    @include respond-to(mobile) {
+        margin: $gutter-tiny/2 0 0 0;
+        li {
+            margin-left: 0;
+        }
+        a {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+.intro-wrapper {
+    @include respond-to(mobile) {
+        padding: 0 $gutter-tiny;
+    }
+}
+
+.wizard {
+    height: 100%;
+    @include bg-img(transparent, "wizard.png", no-repeat);
+    background-position: right bottom;
+    background-size: contain;
+    min-height: $header-height - 64px;
+    @include respond-to(tablets) {
+        min-height: 200px;
+    }
+    @include respond-to(mobile) {
+        @include opacity(0.25);
+        min-height: 240px;
+        background-position: center bottom;
+    }
+}
+
+.logo {
+    color: $color-white;
+    font-size: 64px;
+    font-weight: $font-weight;
+    text-transform: uppercase;
+    @include respond-to(tablets) {
+        font-size: 32px;
+    }
+    @include respond-to(mobile) {
+        font-weight: $bold-font-weight;
+        margin-top: -150px;
+        font-size: 32px;
+    }
+}
+
+.subtitle {
+    font-size: 21px;
+    color: rgba($color-white, 0.25);
+    @include respond-to(tablets) {
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    @include respond-to(mobile) {
+        color: rgba($color-white, 0.7);
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: -12px;
+    }
+}
+
+.schedule, .venue {
+    display: block;
+    color: rgba($color-white, 0.5);
+    &:hover {
+        color: rgba($color-white, 0.75);
+    }
+}
+
+.schedule {
+    font-size: 32px;
+    margin-top: 16px;
+    @include respond-to(tablets) {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    @include respond-to(mobile) {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+}
+
+.venue {
+    font-size: 21px;
+    margin-top: 8px;
+    @include respond-to(tablets) {
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    @include respond-to(mobile) {
+        font-size: 18px;
+        margin-top: 3px;
+    }
+}
+
+.button {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    background: rgba(0,0,0,0.15);
+    color: rgba($color-white, 0.5);
+    cursor: pointer;
+    &:hover {
+        color: rgba($color-white, 0.75);
+        background: rgba(0,0,0,0.5);
+    }
+    &.dark {
+        color: rgba($color-white, 0.8);
+        background: darken(saturate($color-primary, 1%), 4%);
+        &:hover {
+            color: $color-white;
+            background: darken(saturate($color-primary, 3%), 12%);
+        }
+    }
+    &.small {
+        padding: 8px 16px;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    @include respond-to(tablets) {
+        padding: 6px 12px;
+        font-size: 15px;
+        color: rgba($color-white, 0.75);
+        &.small {
+            padding: 5px 13px;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    }
+    @include respond-to(mobile) {
+        font-weight: bold;
+        font-size: 15px;
+        &.small {
+            padding: 5px 13px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+.button--register {
+    margin: 16px 0 20px 0;
+    @include respond-to(mobile) {
+        padding: 6px 14px;
+        margin-bottom: $gutter-mid;
+    }
+}
+
+.langs {
+    padding-left: $gutter-small;
+    li {
+        height: 40px;
+        width: 40px;
+        margin-left: 0;
+        margin-right: 10px;
+        background-blend-mode: multiply;
+    }
+    @each $lang in ('clojure', 'erlang', 'scheme', 'scala', 'ocaml', 'haskell', 'lisp', 'java', 'elixir', 'f') {
+        .lang-#{ $lang } {
+            @include bg-img($color-primary, "langs/lang-#{ $lang }.png", no-repeat, center, center);
+            background-size: contain;
+        }
+    }
+    @include respond-to(tablets) {
+        display: none;
+    }
+    @include respond-to(mobile) {
+        display: none;
+    }
+}
+
+.speakers {
+    background: $color-primary;
+}
+
+.speaker-list {
+    margin-top: $column-gutter;
+    li {
+        text-align: center;
+        @include user-select(none);
+        img {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            @include border-radius(50%);
+        }
+        h3 {
+            font-weight: $font-weight;
+            margin-top: $gutter-tiny;
+            line-height: 1.4;
+            @include opacity(0.5);
+        }
+        a:hover {
+            h3 {
+                @include opacity(1.0);
+            }
+        }
+    }
+    @include respond-to(mobile) {
+        margin-top: $gutter-mid;
+        li {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            h3 {
+                font-size: 12px;
+                font-weight: $bold-font-weight;
+                text-transform: none;
+            }
+        }
+    }
+
+}
+
+.sponsor {
+    margin: $gutter-small 0;
+    padding: $gutter-mid $gutter-small;
+    border: 3px solid $color-secondary;
+    overflow: auto;
+    .tag {
+        position: absolute;
+        left: -$gutter-tiny;
+        top: -$gutter-mid;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: $color-secondary;
+        background: rgba(saturate($color-secondary, 8%), 0.15);
+        padding: 8px 16px;
+        font-weight: $bold-font-weight;
+        border-radius: 4px;
+        @include respond-to(mobile) {
+            border-radius: none;
+        }
+    }
+    .info {
+        font-size: 18px;
+    }
+    .meta {
+        a {
+            display: block;
+            margin-top: $gutter-small;
+        }
+        @include respond-to(tablets) {
+            padding: 0;
+        }
+    }
+    @include respond-to(mobile) {
+        padding: $gutter-mid 0;
+        .columns.large-9 {
+            padding: 0 $gutter-small;
+        }
+        .info {
+            margin-top: 24px;
+            font-size: 14px;
+        }
+    }
+}
+
+.map-link {
+    display: block;
+    position: relative;
+    height: 516px;
+    @include bg-img($color-primary, "map.png", no-repeat);
+    background-size: cover;
+    background-position: center center;
+    .info {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: $gutter-small;
+        background: rgba(0,0,0,0.5);
+        color: rgba($color-white, 0.5);
+    }
+    @include respond-to(tablets) {
+        height: 250px;
+    }
+    @include respond-to(mobile) {
+        height: 320px;
+        .info {
+            color: rgba($color-white, 0.75);
+            font-size: 14px;
+            padding: $gutter-tiny;
+        }
+    }
+}
+
+.footer {
+    color: rgba($color-white, 0.75);
+    padding: $gutter-tiny 0;
+    a {
+        color: rgba($color-white, 0.75);
+        display: inline-block;
+    }
+    a:hover {
+        color: $color-white;
+    }
+    .social-wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+        a {
+            opacity: 0.75;
+            &:hover {
+                opacity: 1.0;
+            }
+            &:before {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+.footer-links {
+    font-size: 16px;
+    padding: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: $gutter-small;
+        @include respond-to(mobile) {
+            display: block;
+            margin: 0;
+            padding-bottom: 8px;
+            width: 100%;
+            opacity: 0.8;
+        }
+    }
+}
+
+.page-index {
+    .bookmark {
+        .social-wrapper {
+            float: right;
+            width: 100px;
+            text-align: center;
+            &:after {
+                @include cssTriangle(50px, $color-white, bottom);
+            }
+            @include respond-to(tablets) {
+                width: 64px;
+                &:after {
+                    @include cssTriangle(32px, $color-white, bottom);
+                }
+            }
+            @include respond-to(mobile) {
+                display: none;
+            }
+        }
+
+        .social-links {
+            li {
+                height: 64px;
+            }
+            a:before {
+                font-size: 64px;
+            }
+            @include respond-to(tablets) {
+                li {
+                    height: 48px;
+                }
+                a:before {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+
+// Individual pages
+// ----------------------------------------------------------------------------
+.page {
+    .content {
+        a:not(.button) {
+            display: inline-block;
+            border-bottom: 2px solid rgba($color-secondary, 0.5);
+        }
+        table {
+            a:not(.button) {
+                display: inline;
+                text-decoration: underline;
+                border-bottom: none;
+            }
+            tr th strong {
+                color: #222;
+            }
+            @include respond-to(mobile) {
+                thead tr th {
+                    font-size: 14px;
+                }
+            }
+        }
+        @include respond-to(tablets) {
+            .columns.large-8 {
+                width: 80%;
+            }
+        }
+    }
+    h2, h3, h4, h5 {
+        margin-bottom: $gutter-tiny;
+    }
+    h2 {
+        margin-top: $gutter-small;
+        @include respond-to(mobile) {
+            font-size: 18px;
+            line-height: 1.2;
+        }
+    }
+    .logo-wrapper {
+        position: relative;
+        @include respond-to(tablets) {
+            padding-right: 0;
+        }
+        @include respond-to(mobile) {
+            a {
+                display: block;
+                position: absolute;
+                width: 100%;
+            }
+        }
+    }
+    .topnav-wrapper {
+        @include respond-to(tablets) {
+            padding-left: 0;
+            padding-right: $gutter-small;
+            .topnav {
+                li {
+                    margin-left: $gutter-tiny;
+                }
+            }
+        }
+    }
+    .header {
+        min-height: 128px;
+        .logo {
+            font-size: 36px;
+            margin: $gutter-tiny 0 0 220px;
+        }
+        .date {
+            display: block;
+            font-size: 18px;
+            line-height: 1.2;
+            margin-top: $gutter-tiny/4;
+        }
+        .wizard {
+            min-height: 128px;
+            width: 200px;
+            position: absolute;
+        }
+        @include respond-to(tablets) {
+            min-height: 96px;
+            .wizard {
+                width: 96px;
+                min-height: 96px;
+            }
+            .logo {
+                margin: 12px 0 0 108px;
+                font-size: 22px;
+            }
+
+        }
+        @include respond-to(mobile) {
+            min-height: 180px;
+            .logo {
+                font-size: 21px;
+                margin: 36px 0 0 0;
+            }
+            .wizard {
+                max-height: 100px;
+                min-height: 100px;
+                width: 200px;
+                background-position: left center;
+            }
+            .date {
+                font-size: 16px;
+                font-weight: $light-font-weight;
+                margin-top: 8px;
+                @include opacity(0.75);
+            }
+            .logo-wrapper {
+                margin-top: 72px;
+                padding: 0 $gutter-tiny;
+            }
+            .topnav-wrapper {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100px;
+                padding: 0 $gutter-tiny;
+            }
+        }
+    }
+    .content .row > .columns > h1 {
+        margin-top: $gutter-small;
+    }
+}
+
+.sponsor-table {
+    .c1 { width: 5%; }
+    .c2 { width: 45%; }
+    .c3 { width: 20%; }
+    .c4 { width: 30%; }
+}
+
+.page-schedule {
+    .content {
+        table {
+            td a:not(.button) {
+                text-decoration: none;
+                border-bottom: 1px dotted $color-primary;
+            }
+            td a:not(.button):first-child {
+                font-weight: $bold-font-weight;
+                text-decoration: underline;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+.page-about {
+    .content {
+        .speaker-list {
+            margin-top: 0;
+            a { border-bottom: none; }
+            h3 {
+                @include opacity(1.0);
+            }
+        }
+    }
+}
+
+.venue-map {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-bottom: $gutter-mid;
+}
+
+.table--workshops {
+    @include respond-to(mobile) {
+        .button, .button:active, .button:hover {
+            font-size: 14px;
+            color: $color-primary;
+            background: transparent;
+            padding: $gutter-tiny 4px;
+        }
+    }
+}
+
+.page-register {
+    .button-reg {
+        @include respond-to(mobile) {
+            display: block;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+    }
+}
+.page-venue {
+    .content {
+        a:not(.button):not(.venue-map) {
+            display: inline !important;
+        }
+    }
+    .button--book {
+        margin-bottom: $gutter-small;
+        @include respond-to(mobile) {
+        }
+    }
+}

@@ -1,0 +1,188 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+  function LoadGmaps() {
+    var myLatlng = new google.maps.LatLng(12.9656980,77.5987670);
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      disableDefaultUI: true,
+      panControl: false,
+      zoomControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL
+      },
+
+      mapTypeControl: false,
+      streetViewControl: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("venue-map"), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title:"The Chancery Pavilion Hotel, #135, Residency Road  Bangalore - 560025"
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: "The Chancery Pavilion Hotel, <br />#135, Residency Road  <br />Bangalore - 560025"
+    });
+    google.maps.event.addListener(map, "tilesloaded", function() {
+      infowindow.open(map, marker);
+    });
+  }
+</script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Venue - Functional Conf 2014</title>
+
+  <meta name="description" content="Functional Conf - Asia's First Functional Programming Conference" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="Functional Conf - Asia's First Functional Programming Conference" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="      ...      " />
+  <meta property="og:site_name" content="Functional Conf, Bangalore, 2014" />
+  <meta property="og:description" content="Asia's First Functional Programming Conference" />
+
+  <!--Twitter Card-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@fuconf">
+  <meta name="twitter:creator" content="@fuconf">
+  <meta name="twitter:title" content="Functional Conf, Bangalore, 2014">
+  <meta name="twitter:description" content="Asia's First Functional Programming Conference">
+  <meta name="twitter:image:src" content="       ...          ">
+
+  <!--Favicons & Touch Icons-->
+  <link rel="shortcut icon" type="image/png" href="/static/images/favicon.png" />
+
+  <link rel="stylesheet" href="/static/css/style.css" media="all">
+  <link rel="stylesheet" href="/static/css/print.css" media="print">
+  <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="
+page page-venue
+" 
+onload="javascript: LoadGmaps();"
+>
+
+  
+  <div class="header dark">
+    <div class="row row--topnav">
+      <div class="large-6 small-12 columns logo-wrapper">
+        <div class="wizard"></div>
+        <a href="/">
+          <h1 class="logo">
+            Functional Conf
+            <span class="date">
+              Oct 9&mdash;11 &lsquo;14 <br />
+              Bangalore
+          </h1>
+        </a>
+      </div>
+      <div class="large-6 small-12 columns topnav-wrapper">
+                <nav class="topnav">
+          <ul class="topnav inline-list">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="/#sponsors">Sponsors</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content">
+    
+    <div class="venue-wrapper">
+      <div class="row">
+          <div class="columns large-8">
+          <h1>Venue</h1>
+
+            <h2>Official Host for Functional Conf 2014</h2>
+
+            <p><a href="http://www.chancerypavilion.com/" target="_blank">Hotel Chancery Pavilion</a>, a <span>5 Star</span> Luxury Business Hotel, located in the heart of the city.</p>
+            <h4>Hotel Address</h4>
+
+            <p><strong>The Chancery Pavilion Hotel Bangalore</strong> <br>#135, Residency Road, Bangalore - 560 025, India <br>Tel : +91-080-41-41-41-41 <br>Fax : +91-080-41-41-42-42 <br><a href="http://www.chancerypavilion.com/" target="_blank">www.chancerypavilion.com</a></p>
+
+            <a href="https://www.google.co.in/maps/place/The+Chancery+Pavilion/@12.965835,77.59882,17z/data=!3m1!4b1!4m2!3m1!1s0x3bae15d7b63cf2eb:0x8f7b9a58eea12c1b" target="_blank" id="venue-map" class="venue-map"></a>
+
+            <h4>Special Discount for Conference Attendees</h4>
+
+            <p>We've worked out a <strong>special 10% discount</strong> on hotel rooms. (~4500 INR + Taxes for Superior Room.)</p>
+            <a class="button dark button--book" href="https://bookings.ihotelier.com/bookings.jsp?groupID=1274429&hotelID=72066" target="_blank">Book your hotel at this discounted price</a>
+
+            <p>Alternatively you can contact <strong>Ms. Shveta Datta</strong>, <em>Asst. Sales Manager @ The Chancery Pavilion</em>:
+              <br><strong>Email</strong>: <a href="mailto:sales.cp@chanceryhotels.com ">sales.cp@chanceryhotels.com</a><br><strong>CC</strong>: <a href="mailto:reservations.cp@chanceryhotels.com">reservations.cp@chanceryhotels.com</a> <br><strong>Mobile</strong>: +91 99000 94659
+              <br><strong>Tel</strong>: +91 80 4141 4141</p>
+
+            <h2>Budget Hotel</h2>
+
+            <p><a href="http://www.grandpavilion.in/" target="_blank">Hotel Grand Pavilion</a>,<br>114, K.H. Road, (Lal Bagh Double Road)<br>Bangalore - 560027
+              <br>(1.2 KMs from Conference Venue. Its a pleasant walk.)</p>
+            <h4>Special Discount for Conference Attendees</h4>
+
+            <p><span>Special 20% discount</span> on hotel rooms. (~3050 INR Single Occupancy for Deluxe Room.) <br>To avail this discount contact <span>Mr. S Umesh</span>, <em>Sales Manager @ The Grand Pavilion</em>:
+              <br><span>Email</span>: <a href="mailto:sales@grandpavilion.in ">sales@grandpavilion.in</a><br><span>Mobile</span>: +91 80507 00020 <br><span>Tel</span>: +91 80 4131 6751/2/3</p>
+
+            <p><strong>USE "FunctionalConf" CODE TO AVAIL THIS DISCOUNT</strong></p>
+
+            <h2>VISA for Entering India</h2>
+            <a name="visa"></a>
+            <p>We recommend all <b>foreign delegates </b>(speakers &amp; participants) apply for a <span style="text-decoration: underline;"><b><i>tourist visa</i></b></span>. This is the safest, cheapest and most hassle-free visa. All you need is your confirmed flight tickets and hotel confirmation to apply for this visa.</p>
+            <p>Current citizens of Cambodia, Finland, Japan, Laos, Luxembourg, Myanmar, New Zealand, Philippines, Singapore, and Vietnam can get a "Tourist Visa On Arrival". Its valid for 30 days, for single entry and is available only at the international airports at Delhi, Mumbai, Chennai, Bangalore and Kolkata. Citizens from other countries are required to apply for the visa before hand. Give at least 3 weeks for the visa process. Some agencies that can help you</p>
+
+            <ul class="style1">
+              <li>US - <a href="http://www.traveldocs.com/index.php?page=india">http://www.traveldocs.com/index.php?page=india</a></li>
+              <li>UK - <a href="http://in.vfsglobal.co.uk/">http://in.vfsglobal.co.uk/</a></li>
+            </ul>
+            <p><span style="text-decoration: underline;"><strong>Please do not apply for Conference Visa.</strong></span> This visa is only applicable for government run conferences.</p>
+
+
+          </div>
+       </div>
+    </div>
+  </div>
+
+
+        <div class="footer dark">
+      <div class="row">
+          <div class="columns large-12">
+            <div class="social-wrapper">
+              <ul class="small-block-grid-5 social-links">
+                <li><a class="icon-twitter" href="https://twitter.com/FuConf"></a></li>
+                <li><a class="icon-fb" href="https://www.facebook.com/pages/Functional-Conf/208786912649602"></a></li>
+                <li><a class="icon-linkedin" href="http://www.linkedin.com/groups/Functional-Conf-6626650/about"></a></li>
+                <li><a class="icon-plus" href="https://plus.google.com/u/0/communities/108445265387298883578"></a></li>
+                <li><a class="icon-mail" href="mailto:team@functionalconf.com?subject=FunctionalConf"></a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="columns large-12">
+          <ul class="footer-links">
+            <li>&copy; 2014, <a href="http://functionalconf.com">Functional Conf</a></li>
+            <li>Made with &hearts; by folks at <a href="https://helpshift.com" target="_blank">Helpshift</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-54301656-1', 'auto');
+ ga('send', 'pageview');
+</script>
+
+</body>
+</html>

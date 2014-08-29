@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+
+{% block header %}
+  <div class="header dark">
+    <div class="row row--topnav">
+      <div class="large-6 small-12 columns logo-wrapper">
+        <div class="wizard"></div>
+        <a href="/">
+          <h1 class="logo">
+            Functional Conf
+            <span class="date">
+              Oct 9&mdash;11 &lsquo;14 <br />
+              Bangalore
+          </h1>
+        </a>
+      </div>
+      <div class="large-6 small-12 columns topnav-wrapper">
+        {% include "_topnav.html" %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,84 @@
+@import "compass";
+
+body {
+    color: #444 !important;
+    background: white !important;
+}
+.footer {
+    display: none;
+}
+.page {
+    .header.dark {
+        background: transparent !important;
+        min-height: 90px;
+        .wizard {
+            width: 100px;
+            background-position: top left;
+        }
+        .logo {
+            color: #000 !important;
+            margin-left: 160px;
+            margin-top: 5px;
+        }
+        .topnav-wrapper {
+            display: none;
+        }
+    }
+    .content {
+        h1, h2, h3, h4, h5 {
+            color: #000 !important;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    }
+    table {
+        tr:nth-of-type(even) { background: #efefef; }
+        tr td, a, a:active, a:visited {
+            color: #222 !important;
+        }
+        th {
+            font-size: 16px!important;
+            padding: 0;
+        }
+        tr td {
+            font-size: 14px !important;
+            padding: 4px 10px;
+        }
+    }
+
+    &.page-schedule {
+        .content {
+            table {
+                td a:not(.button) {
+                    text-decoration: none;
+                    border-bottom: none;
+                }
+                td a:not(.button):first-child {
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .table--day-1 {
+        margin-bottom: 200px;
+    }
+    .table--day-2,
+    .head-workshops {
+        page-break-before: always !important;
+
+    }
+    .table--workshops {
+        .button {
+            display: none !important;
+        }
+    }
+    .schedule-wrapper > .row {
+        padding-bottom: 0 !important;
+    }
+}

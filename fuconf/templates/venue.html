@@ -1,0 +1,66 @@
+{% extends "_base_page.html" %}
+
+{% block title %}Venue - Functional Conf 2014{% endblock %}
+
+{% block body_classes %}
+page page-venue
+{% endblock %}
+
+{% block body_attribs %}
+onload="javascript: LoadGmaps();"
+{% endblock %}
+
+{% block content %}
+    <div class="venue-wrapper">
+      <div class="row">
+          <div class="columns large-8">
+          <h1>Venue</h1>
+
+            <h2>Official Host for Functional Conf 2014</h2>
+
+            <p><a href="http://www.chancerypavilion.com/" target="_blank">Hotel Chancery Pavilion</a>, a <span>5 Star</span> Luxury Business Hotel, located in the heart of the city.</p>
+            <h4>Hotel Address</h4>
+
+            <p><strong>The Chancery Pavilion Hotel Bangalore</strong> <br>#135, Residency Road, Bangalore - 560 025, India <br>Tel : +91-080-41-41-41-41 <br>Fax : +91-080-41-41-42-42 <br><a href="http://www.chancerypavilion.com/" target="_blank">www.chancerypavilion.com</a></p>
+
+            <a href="https://www.google.co.in/maps/place/The+Chancery+Pavilion/@12.965835,77.59882,17z/data=!3m1!4b1!4m2!3m1!1s0x3bae15d7b63cf2eb:0x8f7b9a58eea12c1b" target="_blank" id="venue-map" class="venue-map"></a>
+
+            <h4>Special Discount for Conference Attendees</h4>
+
+            <p>We've worked out a <strong>special 10% discount</strong> on hotel rooms. (~4500 INR + Taxes for Superior Room.)</p>
+            <a class="button dark button--book" href="https://bookings.ihotelier.com/bookings.jsp?groupID=1274429&hotelID=72066" target="_blank">Book your hotel at this discounted price</a>
+
+            <p>Alternatively you can contact <strong>Ms. Shveta Datta</strong>, <em>Asst. Sales Manager @ The Chancery Pavilion</em>:
+              <br><strong>Email</strong>: <a href="mailto:sales.cp@chanceryhotels.com ">sales.cp@chanceryhotels.com</a><br><strong>CC</strong>: <a href="mailto:reservations.cp@chanceryhotels.com">reservations.cp@chanceryhotels.com</a> <br><strong>Mobile</strong>: +91 99000 94659
+              <br><strong>Tel</strong>: +91 80 4141 4141</p>
+
+            <h2>Budget Hotel</h2>
+
+            <p><a href="http://www.grandpavilion.in/" target="_blank">Hotel Grand Pavilion</a>,<br>114, K.H. Road, (Lal Bagh Double Road)<br>Bangalore - 560027
+              <br>(1.2 KMs from Conference Venue. Its a pleasant walk.)</p>
+            <h4>Special Discount for Conference Attendees</h4>
+
+            <p><span>Special 20% discount</span> on hotel rooms. (~3050 INR Single Occupancy for Deluxe Room.) <br>To avail this discount contact <span>Mr. S Umesh</span>, <em>Sales Manager @ The Grand Pavilion</em>:
+              <br><span>Email</span>: <a href="mailto:sales@grandpavilion.in ">sales@grandpavilion.in</a><br><span>Mobile</span>: +91 80507 00020 <br><span>Tel</span>: +91 80 4131 6751/2/3</p>
+
+            <p><strong>USE "FunctionalConf" CODE TO AVAIL THIS DISCOUNT</strong></p>
+
+            <h2>VISA for Entering India</h2>
+            <a name="visa"></a>
+            <p>We recommend all <b>foreign delegates </b>(speakers &amp; participants) apply for a <span style="text-decoration: underline;"><b><i>tourist visa</i></b></span>. This is the safest, cheapest and most hassle-free visa. All you need is your confirmed flight tickets and hotel confirmation to apply for this visa.</p>
+            <p>Current citizens of Cambodia, Finland, Japan, Laos, Luxembourg, Myanmar, New Zealand, Philippines, Singapore, and Vietnam can get a "Tourist Visa On Arrival". Its valid for 30 days, for single entry and is available only at the international airports at Delhi, Mumbai, Chennai, Bangalore and Kolkata. Citizens from other countries are required to apply for the visa before hand. Give at least 3 weeks for the visa process. Some agencies that can help you</p>
+
+            <ul class="style1">
+              <li>US - <a href="http://www.traveldocs.com/index.php?page=india">http://www.traveldocs.com/index.php?page=india</a></li>
+              <li>UK - <a href="http://in.vfsglobal.co.uk/">http://in.vfsglobal.co.uk/</a></li>
+            </ul>
+            <p><span style="text-decoration: underline;"><strong>Please do not apply for Conference Visa.</strong></span> This visa is only applicable for government run conferences.</p>
+
+
+          </div>
+       </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% include "_map.html" %}

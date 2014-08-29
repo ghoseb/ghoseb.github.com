@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% block title %}{% endblock %}</title>
+
+  <meta name="description" content="Functional Conf - Asia's First Functional Programming Conference" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="Functional Conf - Asia's First Functional Programming Conference" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="      ...      " />
+  <meta property="og:site_name" content="Functional Conf, Bangalore, 2014" />
+  <meta property="og:description" content="Asia's First Functional Programming Conference" />
+
+  <!--Twitter Card-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@fuconf">
+  <meta name="twitter:creator" content="@fuconf">
+  <meta name="twitter:title" content="Functional Conf, Bangalore, 2014">
+  <meta name="twitter:description" content="Asia's First Functional Programming Conference">
+  <meta name="twitter:image:src" content="       ...          ">
+
+  <!--Favicons & Touch Icons-->
+  <link rel="shortcut icon" type="image/png" href="/static/images/favicon.png" />
+
+  <link rel="stylesheet" href="/static/css/style.css" media="all">
+  <link rel="stylesheet" href="/static/css/print.css" media="print">
+  <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="{% block body_classes %}{% endblock %}" {% block body_attribs %}{% endblock %}>
+
+  {% block header %}{% endblock %}
+
+  <div class="content">
+    {% block content %}
+    {% endblock %}
+
+    {% include "_footer.html" %}
+  </div>
+
+  {% include "_footer_scripts.html" %}
+
+</body>
+</html>

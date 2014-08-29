@@ -1,0 +1,19 @@
+@import "compass/css3";
+
+/*!
+Entypo pictograms by Daniel Bruce - www.entypo.com
+License - http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+
+@include font-face("entypo-social",
+                   font-files("entypo-social.woff", woff,
+                              "entypo-social.ttf", truetype,
+                              "entypo-social.svg", svg),
+                   "entypo-social.eot");
+
+@include font-face("entypo",
+                   font-files("entypo.woff", woff,
+                              "entypo.ttf", truetype,
+                              "entypo.svg", svg),
+                   "entypo.eot");
