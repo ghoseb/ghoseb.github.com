@@ -5,13 +5,13 @@ License - http://creativecommons.org/licenses/by-sa/3.0/
 */
 @font-face {
   font-family: "entypo-social";
-  src: url('/static/fonts/entypo-social.eot?1351679112');
-  src: url('/static/fonts/entypo-social.eot?&1351679112#iefix') format('embedded-opentype'), url('/static/fonts/entypo-social.woff?1351679112') format('woff'), url('/static/fonts/entypo-social.ttf?1351679112') format('truetype'), url('/static/fonts/entypo-social.svg?1351679112') format('svg');
+  src: url('./static/fonts/entypo-social.eot?1351679112');
+  src: url('./static/fonts/entypo-social.eot?&1351679112#iefix') format('embedded-opentype'), url('./static/fonts/entypo-social.woff?1351679112') format('woff'), url('./static/fonts/entypo-social.ttf?1351679112') format('truetype'), url('./static/fonts/entypo-social.svg?1351679112') format('svg');
 }
 @font-face {
   font-family: "entypo";
-  src: url('/static/fonts/entypo.eot?1351156929');
-  src: url('/static/fonts/entypo.eot?&1351156929#iefix') format('embedded-opentype'), url('/static/fonts/entypo.woff?1351156929') format('woff'), url('/static/fonts/entypo.ttf?1351156929') format('truetype'), url('/static/fonts/entypo.svg?1351156929') format('svg');
+  src: url('./static/fonts/entypo.eot?1351156929');
+  src: url('./static/fonts/entypo.eot?&1351156929#iefix') format('embedded-opentype'), url('./static/fonts/entypo.woff?1351156929') format('woff'), url('./static/fonts/entypo.ttf?1351156929') format('truetype'), url('./static/fonts/entypo.svg?1351156929') format('svg');
 }
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -2373,7 +2373,7 @@ b, strong {
 /* line 141, ../../scss/style.scss */
 .wizard {
   height: 100%;
-  background: transparent url('/static/images/wizard.png?1408875975') no-repeat 0 0;
+  background: transparent url('./static/images/wizard.png?1408875975') no-repeat 0 0;
   background-position: right bottom;
   background-size: contain;
   min-height: 386px;
@@ -2602,22 +2602,22 @@ b, strong {
 }
 /* line 286, ../../scss/style.scss */
 .langs .lang-lisp {
-  background: #694586 url('/static/images/langs/lang-lisp.png?1409304851') no-repeat center center;
+  background: #694586 url('./static/images/langs/lang-lisp.png?1409304851') no-repeat center center;
   background-size: contain;
 }
 /* line 286, ../../scss/style.scss */
 .langs .lang-java {
-  background: #694586 url('/static/images/langs/lang-java.png?1409304851') no-repeat center center;
+  background: #694586 url('./static/images/langs/lang-java.png?1409304851') no-repeat center center;
   background-size: contain;
 }
 /* line 286, ../../scss/style.scss */
 .langs .lang-elixir {
-  background: #694586 url('/static/images/langs/lang-elixir.png?1409304851') no-repeat center center;
+  background: #694586 url('./static/images/langs/lang-elixir.png?1409304851') no-repeat center center;
   background-size: contain;
 }
 /* line 286, ../../scss/style.scss */
 .langs .lang-f {
-  background: #694586 url('/static/images/langs/lang-f.png?1409304851') no-repeat center center;
+  background: #694586 url('./static/images/langs/lang-f.png?1409304851') no-repeat center center;
   background-size: contain;
 }
 @media only screen and (min-width: 767px) and (max-width: 1280px) {
