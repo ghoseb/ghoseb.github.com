@@ -43,31 +43,24 @@ body {
 
 .name {
     grid-area: n;
-    /* text-align: center; */
-    /* background-color: red; */
 }
 
 .last-updated {
     grid-area: u;
     font-size: 0.85em;
-    /* text-align: center; */
-    /* background-color: blue; */
 }
 
 .about {
     grid-area: a;
-    /* background-color: cyan; */
 }
 
 .contact {
     grid-area: c;
     font-size: 0.85em;
-    /* background-color: yellow; */
 }
 
 .pic {
     grid-area: p;
-    /* background-color: seagreen; */
 }
 
 .pic img {
@@ -125,6 +118,7 @@ a:active {
     .container {
         display: block;
     }
+
     /* FIXME: this doesn't work */
     .pic img {
         height: 90%;
