@@ -16,6 +16,15 @@
     --color-highlight: #fcfca7;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #0e0e0e;
+        --color-text: #e6e6e6;
+        --color-link: #9ff4c2;
+        --color-highlight: #75108c;
+    }
+}
+
 body {
     font-size: var(--font-size);
     font-family: var(--font-family);
