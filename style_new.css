@@ -133,4 +133,8 @@ a:active {
     p.big {
         font-size: 1.66em;
     }
+
+    .contact {
+        font-size: 1em;
+    }
 }
