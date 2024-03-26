@@ -23,6 +23,10 @@
         --color-link: #9ff4c2;
         --color-highlight: #75108c;
     }
+
+    .pic img {
+        filter: grayscale(50%);
+    }
 }
 
 body {
@@ -77,7 +81,6 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: var(--border-radius);
-    filter: sepia(15%);
 }
 
 p {
